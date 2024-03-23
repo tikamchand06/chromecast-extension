@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "name": "Chromecast",
+  "icons": { "128": "icon.png" },
+  "action": { "default_popup": "popup.html" },
+  "homepage_url": "https://chromecast.tcmhack.in",
+  "author": { "url": "https://www.tcmhack.in", "name": "TIKAM CHAND MEGHWANSHI" },
+  "description": "Cast your videos from any website to your casting devices like TV in just one click.",
+  "web_accessible_resources": [{ "resources": ["/js/*"], "matches": ["<all_urls>"] }],
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "css": ["css/inject_styles.css"],
+      "js": ["js/jquery-3.7.1.min.js", "js/inject_scripts.js"]
+    }
+  ]
+}

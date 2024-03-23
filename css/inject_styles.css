@@ -1,0 +1,11 @@
+button.tcm-cast-button {
+  position: fixed !important;
+  top: 0 !important;
+  color: white !important;
+  z-index: 999999 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  background: #2196f3 !important;
+}
